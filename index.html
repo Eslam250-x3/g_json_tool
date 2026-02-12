@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دليل استخدام محول الأسئلة إلى JSON</title>
+    <title>Question to JSON Converter — User Guide</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,17 +15,18 @@
         <div class="header-inner">
             <div class="logo">
                 <i data-lucide="book-open" class="logo-icon"></i>
-                <span class="logo-text">محول الأسئلة إلى JSON</span>
+                <span class="logo-text">Question to JSON Converter</span>
             </div>
             <nav class="nav-links">
-                <a href="#overview"><i data-lucide="layout" class="nav-icon"></i>نظرة عامة</a>
-                <a href="#settings"><i data-lucide="settings" class="nav-icon"></i>الإعدادات</a>
-                <a href="#formats"><i data-lucide="file-code" class="nav-icon"></i>صيغ الأسئلة</a>
-                <a href="#editor"><i data-lucide="edit-3" class="nav-icon"></i>المحرر</a>
-                <a href="#preview"><i data-lucide="eye" class="nav-icon"></i>المعاينة</a>
-                <a href="#media"><i data-lucide="image" class="nav-icon"></i>الوسائط</a>
-                <a href="#export"><i data-lucide="download" class="nav-icon"></i>التصدير</a>
-                <a href="#troubleshooting"><i data-lucide="help-circle" class="nav-icon"></i>حل المشاكل</a>
+                <a href="#overview"><i data-lucide="layout" class="nav-icon"></i>Overview</a>
+                <a href="#settings"><i data-lucide="settings" class="nav-icon"></i>Settings</a>
+                <a href="#formats"><i data-lucide="file-code" class="nav-icon"></i>Question Formats</a>
+                <a href="#editor"><i data-lucide="edit-3" class="nav-icon"></i>Editor</a>
+                <a href="#preview"><i data-lucide="eye" class="nav-icon"></i>Preview</a>
+                <a href="#media"><i data-lucide="image" class="nav-icon"></i>Media</a>
+                <a href="#export"><i data-lucide="download" class="nav-icon"></i>Export</a>
+                <a href="#troubleshooting"><i data-lucide="help-circle" class="nav-icon"></i>Troubleshooting</a>
+                <a href="#links"><i data-lucide="link" class="nav-icon"></i>Links</a>
             </nav>
         </div>
     </header>
@@ -47,15 +48,16 @@
 
     <!-- Filter / Quick Nav -->
     <div class="filter-bar">
-        <button class="filter-btn active"><i data-lucide="layout-grid" class="btn-icon"></i>كل الأجزاء</button>
-        <button class="filter-btn" data-section="overview"><i data-lucide="layout" class="btn-icon"></i>النظرة العامة</button>
-        <button class="filter-btn" data-section="settings"><i data-lucide="settings" class="btn-icon"></i>الإعدادات</button>
-        <button class="filter-btn" data-section="formats"><i data-lucide="file-code" class="btn-icon"></i>صيغ الأسئلة</button>
-        <button class="filter-btn" data-section="editor"><i data-lucide="edit-3" class="btn-icon"></i>المحرر</button>
-        <button class="filter-btn" data-section="preview"><i data-lucide="eye" class="btn-icon"></i>المعاينة</button>
-        <button class="filter-btn" data-section="media"><i data-lucide="image" class="btn-icon"></i>الوسائط</button>
-        <button class="filter-btn" data-section="export"><i data-lucide="download" class="btn-icon"></i>التصدير</button>
-        <button class="filter-btn" data-section="troubleshooting"><i data-lucide="help-circle" class="btn-icon"></i>حل المشاكل</button>
+        <button class="filter-btn active"><i data-lucide="layout-grid" class="btn-icon"></i>All Sections</button>
+        <button class="filter-btn" data-section="overview"><i data-lucide="layout" class="btn-icon"></i>Overview</button>
+        <button class="filter-btn" data-section="settings"><i data-lucide="settings" class="btn-icon"></i>Settings</button>
+        <button class="filter-btn" data-section="formats"><i data-lucide="file-code" class="btn-icon"></i>Question Formats</button>
+        <button class="filter-btn" data-section="editor"><i data-lucide="edit-3" class="btn-icon"></i>Editor</button>
+        <button class="filter-btn" data-section="preview"><i data-lucide="eye" class="btn-icon"></i>Preview</button>
+        <button class="filter-btn" data-section="media"><i data-lucide="image" class="btn-icon"></i>Media</button>
+        <button class="filter-btn" data-section="export"><i data-lucide="download" class="btn-icon"></i>Export</button>
+        <button class="filter-btn" data-section="troubleshooting"><i data-lucide="help-circle" class="btn-icon"></i>Troubleshooting</button>
+        <button class="filter-btn" data-section="links"><i data-lucide="link" class="btn-icon"></i>Links</button>
     </div>
 
     <!-- Main Content -->
@@ -64,178 +66,178 @@
         <!-- Section 2: Overview -->
         <section id="overview" class="card section-card">
             <div class="card-number">2</div>
-            <h2>نظرة عامة على الواجهة</h2>
-            <p>يقدم هذا الدليل نظرة شاملة على واجهة <strong>محول الأسئلة إلى JSON</strong> لتساعدك على التنقل بين أجزائها بسهولة. مناسب خاصةً للمستخدمين الجدد.</p>
+            <h2>Interface Overview</h2>
+            <p>This guide provides a comprehensive overview of the <strong>Question to JSON Converter</strong> interface to help you navigate its sections with ease. Especially useful for new users.</p>
             
-            <h3>قبل البدء</h3>
+            <h3>Before You Start</h3>
             <div class="callout callout-info">
                 <i data-lucide="info" class="callout-icon"></i>
                 <div class="callout-content">
                     <ul class="list-with-icons">
-                        <li><i data-lucide="check" class="list-icon"></i><span>الواجهة تدعم <strong>العربية</strong> و<strong>الإنجليزية</strong> (زر <i data-lucide="globe" class="inline-icon"></i> لتبديل اللغة).</span></li>
-                        <li><i data-lucide="check" class="list-icon"></i><span>العملية الأساسية: إعداد القسم ← إدخال الأسئلة ← معاينة ← تصدير.</span></li>
-                        <li><i data-lucide="alert-triangle" class="list-icon"></i><span><strong>لا تتخطَ خطوة المعاينة</strong> قبل التصدير؛ فالزر سيعرض رسالة خطأ.</span></li>
+                        <li><i data-lucide="check" class="list-icon"></i><span>The interface supports <strong>Arabic</strong> and <strong>English</strong> (use the <i data-lucide="globe" class="inline-icon"></i> button to switch language).</span></li>
+                        <li><i data-lucide="check" class="list-icon"></i><span>Core workflow: Section setup ← Enter questions ← Preview ← Export.</span></li>
+                        <li><i data-lucide="alert-triangle" class="list-icon"></i><span><strong>Do not skip the Preview step</strong> before Export; the button will show an error message.</span></li>
                     </ul>
                 </div>
             </div>
 
-            <h3>الهيكل العام</h3>
+            <h3>General Layout</h3>
             <div class="diagram-box structure-frame">
-                <img src="assts/interface.jpg" alt="الهيكل العام - Header واللوحة اليسرى (الإدخال) واللوحة اليمنى (المعاينة)" class="structure-img">
+                <img src="assts/interface.jpg" alt="General layout - Header, left panel (input), right panel (preview)" class="structure-img">
             </div>
 
-            <h3>0. منطقة الرسائل</h3>
-            <p>في أعلى الصفحة (أعلى المحتوى الرئيسي) تظهر <strong>رسائل النظام</strong> (نجاح، تحذير، خطأ) مثل:</p>
+            <h3>0. Message Area</h3>
+            <p>At the top of the page (above the main content) <strong>system messages</strong> appear (success, warning, error), e.g.:</p>
             <ul>
-                <li>"تم نسخ JSON بنجاح"</li>
-                <li>"الرجاء تحليل الأسئلة أولاً"</li>
-                <li>"تم حفظ الإعدادات"</li>
+                <li>"JSON copied successfully"</li>
+                <li>"Please analyze questions first"</li>
+                <li>"Settings saved"</li>
             </ul>
-            <p>هذه الرسائل تختفي تلقائياً بعد بضع ثوانٍ.</p>
+            <p>These messages disappear automatically after a few seconds.</p>
 
-            <h3>1. الهيدر (Header)</h3>
-            <p>في أعلى الصفحة ستجد:</p>
+            <h3>1. Header</h3>
+            <p>At the top of the page you'll find:</p>
             <ul>
-                <li><strong>العنوان:</strong> Advanced Smart Question Converter</li>
-                <li><strong>الوصف:</strong> Convert question text to advanced JSON format with one click</li>
+                <li><strong>Title:</strong> Advanced Smart Question Converter</li>
+                <li><strong>Description:</strong> Convert question text to advanced JSON format with one click</li>
             </ul>
 
-            <h3>2. اللوحة اليسرى (Input Panel)</h3>
-            <p><strong>① Select Subject &amp; Settings</strong> — قسم لإعداد المادة والبيانات الأساسية:</p>
+            <h3>2. Left Panel (Input Panel)</h3>
+            <p><strong>① Select Subject &amp; Settings</strong> — Section for configuring the subject and basic data:</p>
             <ul>
-                <li><strong>Section ID:</strong> حقل إدخال معرّف القسم</li>
-                <li><strong>زر Fetch:</strong> لجلب بيانات القسم تلقائياً (المادة، الصف، العنوان)</li>
-                <li><strong>عرض البيانات:</strong> يظهر بعد الجلب (Subject، Grade، Section)</li>
-                <li><strong>Arabic Section ID:</strong> يظهر للمواد ثنائية اللغة</li>
+                <li><strong>Section ID:</strong> Input field for the section identifier</li>
+                <li><strong>Fetch button:</strong> To automatically fetch section data (Subject, Grade, Title)</li>
+                <li><strong>Data display:</strong> Appears after fetching (Subject, Grade, Section)</li>
+                <li><strong>Arabic Section ID:</strong> Shown for bilingual subjects</li>
             </ul>
-            <p><strong>② Enter Text</strong> — المحرر النصي الرئيسي لكتابة أو لصق الأسئلة. يفصل بين الأسئلة باستخدام <code>---</code>.</p>
+            <p><strong>② Enter Text</strong> — Main text editor for writing or pasting questions. Separate questions with <code>---</code>.</p>
 
-            <h3>3. أزرار التحكم الرئيسية</h3>
+            <h3>3. Main Control Buttons</h3>
             <div class="diagram-box structure-frame">
-                <img src="assts/control_puten.png" alt="أزرار التحكم الرئيسية - Create AI Questions، Preview Questions، Smart Tags، Create JSON File، Export Package، Manage Tags، Clear Fields، العربية" class="structure-img">
+                <img src="assts/control_puten.png" alt="Main control buttons - Create AI Questions, Preview Questions, Smart Tags, Create JSON File, Export Package, Manage Tags, Clear Fields" class="structure-img">
             </div>
-            <h4>ترتيب منطقي للأزرار</h4>
+            <h4>Logical Button Order</h4>
             <div class="callout callout-warning">
                 <i data-lucide="alert-triangle" class="callout-icon"></i>
-                <p class="callout-content"><strong>Export Package</strong> يبقى معطّلاً حتى تضغط <strong>Preview Questions</strong> بنجاح.</p>
+                <p class="callout-content"><strong>Export Package</strong> remains disabled until you successfully press <strong>Preview Questions</strong>.</p>
             </div>
-            <h4>حفظ تلقائي</h4>
+            <h4>Auto-save</h4>
             <div class="callout callout-tip">
                 <i data-lucide="lightbulb" class="callout-icon"></i>
                 <ul class="callout-content list-with-icons">
-                    <li><i data-lucide="check" class="list-icon"></i><span>يُحفظ محتوى المحرر تلقائياً في المتصفح (LocalStorage).</span></li>
-                    <li><i data-lucide="check" class="list-icon"></i><span>قد يُعاد تحميل المحتوى عند إعادة فتح الصفحة.</span></li>
-                    <li><i data-lucide="alert-triangle" class="list-icon"></i><span><strong>Clear Fields</strong> يمسح المحتوى ولا يمكن التراجع عنه.</span></li>
+                    <li><i data-lucide="check" class="list-icon"></i><span>Editor content is auto-saved in the browser (LocalStorage).</span></li>
+                    <li><i data-lucide="check" class="list-icon"></i><span>Content may reload when you reopen the page.</span></li>
+                    <li><i data-lucide="alert-triangle" class="list-icon"></i><span><strong>Clear Fields</strong> clears content and cannot be undone.</span></li>
                 </ul>
             </div>
 
-            <h3>4. اللوحة اليمنى (Preview Panel)</h3>
+            <h3>4. Right Panel (Preview Panel)</h3>
             <ul>
-                <li><strong>العنوان:</strong> Question Preview</li>
-                <li><strong>زر Live Preview:</strong> لمعاينة الأسئلة بمحرك Nagwa (يتفعّل بعد التحليل)</li>
-                <li>تعرض الأسئلة المُحلّلة بعد الضغط على <strong>Preview Questions</strong></li>
-                <li>يمكنك تغيير نوع كل سؤال من القائمة المنسدلة في المعاينة</li>
+                <li><strong>Title:</strong> Question Preview</li>
+                <li><strong>Live Preview button:</strong> To preview questions with Nagwa engine (activates after analysis)</li>
+                <li>Analyzed questions appear after pressing <strong>Preview Questions</strong></li>
+                <li>You can change each question's type from the dropdown in the preview</li>
             </ul>
 
-            <h3>5. مؤشر التحميل</h3>
-            <p>أثناء التحليل أو التوليد بالذكاء الاصطناعي، يظهر <strong>مؤشر تحميل</strong> (Loading) مع رسالة مثل "جاري التحليل..." أو "Analyzing...".</p>
+            <h3>5. Loading Indicator</h3>
+            <p>During analysis or AI generation, a <strong>loading indicator</strong> appears with a message like "Analyzing..." or "Generating...".</p>
 
-            <h3>مسار العمل الأساسي</h3>
+            <h3>Core Workflow</h3>
             <div class="diagram-box structure-frame">
-                <img src="assts/workflow.jpg" alt="مسار العمل الأساسي - إدخال Section ID، كتابة الأسئلة، المعاينة، التصدير" class="structure-img">
+                <img src="assts/workflow.jpg" alt="Core workflow - Enter Section ID, write questions, preview, export" class="structure-img">
             </div>
         </section>
 
         <!-- Section 3: Settings -->
         <section id="settings" class="card section-card">
             <div class="card-number">3</div>
-            <h2>إعداد القسم والبيانات الأساسية</h2>
+            <h2>Section Setup and Basic Data</h2>
             
-            <h3>ما هو Section ID؟</h3>
-            <p><strong>Section ID</strong> هو معرّف رقمي فريد يمثل قسماً معيّناً داخل المنهج على منصة Nagwa QMS (مثلاً فصل دراسي أو وحدة في مادة معينة).</p>
-            <p>مثال: <code>686175817891</code> — يُستمد من رابط القسم في منصة Nagwa.</p>
+            <h3>What is Section ID?</h3>
+            <p><strong>Section ID</strong> is a unique numeric identifier representing a specific section within the curriculum on the Nagwa QMS platform (e.g., a chapter or unit in a subject).</p>
+            <p>Example: <code>686175817891</code> — derived from the section URL on the Nagwa platform.</p>
 
-            <h3>كيفية الإعداد</h3>
+            <h3>How to Set Up</h3>
             <ol>
-                <li>في قسم <strong>① Select Subject &amp; Settings</strong> اكتب معرّف القسم في حقل Section ID</li>
-                <li>اضغط زر <strong><i data-lucide="download" class="inline-icon"></i> Fetch</strong></li>
-                <li>تُجلب البيانات من API الخاص بـ Nagwa وتظهر: <strong><i data-lucide="book-open" class="inline-icon"></i> Subject</strong> (المادة)، <strong><i data-lucide="graduation-cap" class="inline-icon"></i> Grade</strong> (الصف)، <strong><i data-lucide="book-marked" class="inline-icon"></i> Section</strong> (عنوان القسم)</li>
-                <li>تُستخدم هذه البيانات تلقائياً عند إنشاء JSON، تصدير ZIP، وملء حقول التصدير</li>
+                <li>In the <strong>① Select Subject &amp; Settings</strong> section, enter the section ID in the Section ID field</li>
+                <li>Press the <strong><i data-lucide="download" class="inline-icon"></i> Fetch</strong> button</li>
+                <li>Data is fetched from the Nagwa API and displays: <strong><i data-lucide="book-open" class="inline-icon"></i> Subject</strong>, <strong><i data-lucide="graduation-cap" class="inline-icon"></i> Grade</strong>, <strong><i data-lucide="book-marked" class="inline-icon"></i> Section</strong> (section title)</li>
+                <li>This data is used automatically when creating JSON, exporting ZIP, and filling export fields</li>
             </ol>
 
             <h3>Arabic Section ID</h3>
-            <p>للمواد ثنائية اللغة (مثل English أو Discover): يظهر حقل <strong><i data-lucide="globe" class="inline-icon"></i> Arabic Section ID / معرّف القسم العربي</strong>. أدخله واضغط Fetch. تظهر بيانات Subject AR، Grade AR، Section AR. تحذير يظهر إذا كان الصف مختلفاً بين الإنجليزي والعربي.</p>
+            <p>For bilingual subjects (e.g., English or Discover): The <strong><i data-lucide="globe" class="inline-icon"></i> Arabic Section ID</strong> field appears. Enter it and press Fetch. Subject AR, Grade AR, and Section AR data will show. A warning appears if the grade differs between English and Arabic.</p>
 
-            <h3>الحقول المخفية</h3>
+            <h3>Hidden Fields</h3>
             <div class="table-wrap">
                 <table class="content-table">
-                    <thead><tr><th><i data-lucide="list" class="inline-icon"></i> الحقل</th><th><i data-lucide="file-text" class="inline-icon"></i> الوصف</th><th><i data-lucide="settings" class="inline-icon"></i> القيمة الافتراضية</th></tr></thead>
+                    <thead><tr><th><i data-lucide="list" class="inline-icon"></i> Field</th><th><i data-lucide="file-text" class="inline-icon"></i> Description</th><th><i data-lucide="settings" class="inline-icon"></i> Default Value</th></tr></thead>
                     <tbody>
-                        <tr><td>Subject</td><td>المادة</td><td>من بيانات Fetch</td></tr>
-                        <tr><td>Grade</td><td>الصف (1–12)</td><td>من بيانات Fetch</td></tr>
-                        <tr><td>Source</td><td>مصدر الأسئلة</td><td>nagwa</td></tr>
-                        <tr><td>Language</td><td>لغة المحتوى</td><td>en / ar</td></tr>
-                        <tr><td>Country</td><td>الدولة</td><td>eg (مصر)</td></tr>
+                        <tr><td>Subject</td><td>Subject name</td><td>From Fetch data</td></tr>
+                        <tr><td>Grade</td><td>Grade (1–12)</td><td>From Fetch data</td></tr>
+                        <tr><td>Source</td><td>Question source</td><td>nagwa</td></tr>
+                        <tr><td>Language</td><td>Content language</td><td>en / ar</td></tr>
+                        <tr><td>Country</td><td>Country</td><td>eg</td></tr>
                     </tbody>
                 </table>
             </div>
 
-            <h3>متى أحتاج إلى Fetch؟</h3>
+            <h3>When Do I Need Fetch?</h3>
             <ul>
-                <li>عند بدء عمل جديد لقسم معيّن</li>
-                <li>عند الانتقال لقسم مختلف</li>
-                <li>للتأكد من صحة بيانات التصدير قبل Create JSON أو Export Package</li>
+                <li>When starting new work for a specific section</li>
+                <li>When switching to a different section</li>
+                <li>To verify export data before Create JSON or Export Package</li>
             </ul>
 
-            <h3>أين أجد Section ID؟</h3>
+            <h3>Where to Find Section ID</h3>
             <ul>
-                <li>من رابط القسم في منصة Nagwa</li>
-                <li>من واجهة إدارة المحتوى</li>
-                <li>من فريق المحتوى أو المدير</li>
+                <li>From the section URL on the Nagwa platform</li>
+                <li>From the content management interface</li>
+                <li>From the content team or administrator</li>
             </ul>
 
-            <h3>ملاحظات تقنية</h3>
+            <h3>Technical Notes</h3>
             <ul>
-                <li>Fetch يعتمد على الاتصال بالإنترنت ووجود السيرفر الوسيط (proxy)</li>
-                <li>Section ID يجب أن يكون رقماً صحيحاً (مثل 686175817891)</li>
-                <li>تطابق الصفوف: إذا ظهر تحذير بتعارض الصفوف، تأكد من اختيار نفس الصف للقسم الإنجليزي والعربي</li>
-                <li>ماذا لو لم أستطع Fetch؟ الحقول مخفية وتُعبأ من Fetch فقط. في حال فشل Fetch راجع جزء حل المشاكل.</li>
+                <li>Fetch requires an internet connection and the proxy server to be running</li>
+                <li>Section ID must be a valid number (e.g., 686175817891)</li>
+                <li>Grade matching: If a grade conflict warning appears, ensure the same grade is selected for both English and Arabic sections</li>
+                <li>What if Fetch fails? Hidden fields are only populated by Fetch. If Fetch fails, see the Troubleshooting section.</li>
             </ul>
         </section>
 
         <!-- Section 4: Formats -->
         <section id="formats" class="card section-card">
             <div class="card-number">4</div>
-            <h2>إدخال النص وصيغ الأسئلة</h2>
+            <h2>Text Input and Question Formats</h2>
             
-            <h3>القواعد الأساسية</h3>
+            <h3>Basic Rules</h3>
             <ul>
-                <li><strong>الفصل بين الأسئلة:</strong> استخدم <code>---</code> كفاصل بين كل سؤال وسؤال</li>
-                <li><strong>الوسوم:</strong> <code>@STEM</code>، <code>@CHOICES</code>، <code>@ANSWER</code>، <code>@MATCHING_PAIRS</code>، <code>@GAPS</code>، <code>@BLANK</code>، <code>@STATEMENT</code>، <code>@PART</code></li>
-                <li><strong>علامات الإجابة:</strong> <code>*</code> للإجابة الصحيحة في MCQ/MRQ و Gap Fill، <code>-</code> للإجابة الخاطئة</li>
-                <li><strong>ترتيب الأسطر:</strong> اكتب <code>type:</code> في السطر الأول غالباً. بعد <code>@CHOICES</code> كل سطر = اختيار واحد (يبدأ بـ <code>*</code> أو <code>-</code>). لا تضع أسطر فارغة غير ضرورية داخل كتلة سؤال واحدة.</li>
+                <li><strong>Separating questions:</strong> Use <code>---</code> as a separator between each question</li>
+                <li><strong>Tags:</strong> <code>@STEM</code>, <code>@CHOICES</code>, <code>@ANSWER</code>, <code>@MATCHING_PAIRS</code>, <code>@GAPS</code>, <code>@BLANK</code>, <code>@STATEMENT</code>, <code>@PART</code></li>
+                <li><strong>Answer markers:</strong> <code>*</code> for correct answer in MCQ/MRQ and Gap Fill, <code>-</code> for incorrect</li>
+                <li><strong>Line order:</strong> Write <code>type:</code> on the first line usually. After <code>@CHOICES</code> each line = one choice (starts with <code>*</code> or <code>-</code>). Do not add unnecessary blank lines inside a single question block.</li>
             </ul>
 
-            <h3>نصيحة للمبتدئين</h3>
-            <p>ابدأ بسؤال MCQ بسيط:</p>
+            <h3>Beginner Tip</h3>
+            <p>Start with a simple MCQ:</p>
             <pre class="code-block">type: mcq
 @STEM
-ما عاصمة مصر؟
+What is the capital of Egypt?
 @CHOICES
-* القاهرة
-- الإسكندرية
-- الجيزة
+* Cairo
+- Alexandria
+- Giza
 ---</pre>
 
-            <h3>أنواع الأسئلة وصيغها</h3>
-            <p class="format-hint">اضغط على أي بطاقة لعرض البنية والمثال</p>
+            <h3>Question Types and Formats</h3>
+            <p class="format-hint">Click any card to view the structure and example</p>
             <div class="formats-grid interactive">
                 <div class="format-card" data-type="mcq">
                     <div class="format-card-header">
                         <span class="format-type">MCQ</span>
-                        <span class="format-ar">(اختيار من متعدد)</span>
+                        <span class="format-ar">(Multiple Choice)</span>
                     </div>
-                    <p class="format-desc">إجابة صحيحة واحدة بـ <span class="tag">*</span></p>
+                    <p class="format-desc">Single correct answer with <span class="tag">*</span></p>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: mcq
@@ -260,9 +262,9 @@ Which planet is known as the "Red Planet"?
                 <div class="format-card" data-type="mrq">
                     <div class="format-card-header">
                         <span class="format-type">MRQ</span>
-                        <span class="format-ar">(إجابات متعددة)</span>
+                        <span class="format-ar">(Multiple Response)</span>
                     </div>
-                    <p class="format-desc">أكثر من إجابة صحيحة بـ <span class="tag">*</span></p>
+                    <p class="format-desc">Multiple correct answers with <span class="tag">*</span></p>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: mrq
@@ -288,9 +290,9 @@ Which of the following are primary colors?
                 <div class="format-card" data-type="string">
                     <div class="format-card-header">
                         <span class="format-type">String</span>
-                        <span class="format-ar">(إجابة قصيرة)</span>
+                        <span class="format-ar">(Short Answer)</span>
                     </div>
-                    <p class="format-desc">استخدم <span class="tag">@ANSWER</span></p>
+                    <p class="format-desc">Use <span class="tag">@ANSWER</span></p>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: string
@@ -313,9 +315,9 @@ Light reflects off the ocean. - 0 - Incorrect scientific explanation.</pre>
                 <div class="format-card" data-type="matching">
                     <div class="format-card-header">
                         <span class="format-type">Matching</span>
-                        <span class="format-ar">(توصيل)</span>
+                        <span class="format-ar">(Matching)</span>
                     </div>
-                    <p class="format-desc">أزواج مفصولة بـ | في <span class="tag">@MATCHING_PAIRS</span></p>
+                    <p class="format-desc">Pairs separated by | in <span class="tag">@MATCHING_PAIRS</span></p>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: matching
@@ -338,9 +340,9 @@ Cairo | Egypt</pre>
                 <div class="format-card" data-type="ordering">
                     <div class="format-card-header">
                         <span class="format-type">Ordering</span>
-                        <span class="format-ar">(ترتيب)</span>
+                        <span class="format-ar">(Ordering)</span>
                     </div>
-                    <p class="format-desc">مع <span class="tag">@CHOICES</span> لكل عنصر</p>
+                    <p class="format-desc">With <span class="tag">@CHOICES</span> for each item</p>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: ordering
@@ -365,9 +367,9 @@ Arrange these historical events in chronological order (earliest first).
                 <div class="format-card" data-type="gap">
                     <div class="format-card-header">
                         <span class="format-type">Gap Fill</span>
-                        <span class="format-ar">(ملء الفراغات)</span>
+                        <span class="format-ar">(Gap Fill)</span>
                     </div>
-                    <p class="format-desc"><span class="tag">@BLANK</span> مكان الفراغ، <span class="tag">@GAPS</span> قائمة الخيارات</p>
+                    <p class="format-desc"><span class="tag">@BLANK</span> for the gap, <span class="tag">@GAPS</span> list of choices</p>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: gap
@@ -390,9 +392,9 @@ Photosynthesis is the process by which @BLANK use sunlight to synthesize nutrien
                 <div class="format-card" data-type="frq">
                     <div class="format-card-header">
                         <span class="format-type">FRQ</span>
-                        <span class="format-ar">(إجابة حرة)</span>
+                        <span class="format-ar">(Free Response)</span>
                     </div>
-                    <p class="format-desc"><span class="tag">@ANSWER</span> مع <span class="tag">type: frq</span></p>
+                    <p class="format-desc"><span class="tag">@ANSWER</span> with <span class="tag">type: frq</span></p>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: frq
@@ -409,9 +411,9 @@ If a rectangle has a length of 5cm and a width of 4cm, what is its area in squar
                 <div class="format-card" data-type="input">
                     <div class="format-card-header">
                         <span class="format-type">Input</span>
-                        <span class="format-ar">(إدخال رقمي)</span>
+                        <span class="format-ar">(Numeric Input)</span>
                     </div>
-                    <p class="format-desc"><span class="tag">@ANSWER</span> ثم القيمة</p>
+                    <p class="format-desc"><span class="tag">@ANSWER</span> then the value</p>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: input
@@ -430,7 +432,7 @@ Solve for x: 2x + 5 = 15
                 <div class="format-card" data-type="counting">
                     <div class="format-card-header">
                         <span class="format-type">Counting</span>
-                        <span class="format-ar">(عدّ)</span>
+                        <span class="format-ar">(Counting)</span>
                     </div>
                     <p class="format-desc"><span class="tag">@ANSWER</span> &lt;value&gt; | &lt;unit&gt;</p>
                     <div class="format-detail">
@@ -451,9 +453,9 @@ How many sides does a hexagon have?
                 <div class="format-card" data-type="opinion">
                     <div class="format-card-header">
                         <span class="format-type">Opinion</span>
-                        <span class="format-ar">(رأي)</span>
+                        <span class="format-ar">(Opinion)</span>
                     </div>
-                    <p class="format-desc"><span class="tag">@CHOICES</span> مع <span class="tag">-</span> لكل خيار</p>
+                    <p class="format-desc"><span class="tag">@CHOICES</span> with <span class="tag">-</span> for each option</p>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: opinion
@@ -479,20 +481,20 @@ Which of these school subjects do you find most interesting?
                 </div>
             </div>
 
-            <h3>Input (إدخال رقمي)</h3>
-            <p>الوحدة اختيارية بعد <code>|</code> في الإجابة، مثل: <code>15 | سم</code></p>
+            <h3>Input (Numeric)</h3>
+            <p>Unit is optional after <code>|</code> in the answer, e.g.: <code>15 | cm</code></p>
 
-            <h3>Opinion (رأي)</h3>
-            <p>بدون إجابات صحيحة أو خاطئة — كل الاختيارات بـ <code>-</code></p>
+            <h3>Opinion</h3>
+            <p>No correct or incorrect answers — all choices use <code>-</code></p>
 
-            <h3>أنواع إضافية</h3>
+            <h3>Additional Types</h3>
             <ul>
-                <li><strong>FRQ AI:</strong> <code>type: frq</code> ثم في المعاينة اختر Template ID المناسب (لمواد English خاصةً)</li>
-                <li><strong>GMRQ:</strong> مجموعتين يفصل بينهما <code>---</code> داخل @CHOICES</li>
-                <li><strong>Counting:</strong> <code>type: counting</code> مع <code>@ANSWER</code> مثل <code>5 | برتقالات</code></li>
-                <li><strong>@POEM و @END_POEM:</strong> للنص الشعري — ضع الأبيات بينهما</li>
-                <li><strong>@ALTTEXT و @GRAPHIC_NOTE:</strong> للصور الافتراضية — يمكن استخدامها في @STEM أو @CHOICES أو @MATCHING_PAIRS</li>
-                <li><strong>Matching مع صور:</strong> مثال على matching مع @ALTTEXT و @GRAPHIC_NOTE في الأزواج:
+                <li><strong>FRQ AI:</strong> <code>type: frq</code> then in preview select the appropriate Template ID (especially for English subjects)</li>
+                <li><strong>GMRQ:</strong> Two groups separated by <code>---</code> inside @CHOICES</li>
+                <li><strong>Counting:</strong> <code>type: counting</code> with <code>@ANSWER</code> like <code>5 | oranges</code></li>
+                <li><strong>@POEM and @END_POEM:</strong> For poetic text — place verses between them</li>
+                <li><strong>@ALTTEXT and @GRAPHIC_NOTE:</strong> For placeholder images — can be used in @STEM, @CHOICES, or @MATCHING_PAIRS</li>
+                <li><strong>Matching with images:</strong> Example of matching with @ALTTEXT and @GRAPHIC_NOTE in pairs:
                     <pre class="code-block">type: matching
 @STEM
 Drag to sort the needs and wants.
@@ -502,7 +504,7 @@ Need | @ALTTEXT: Illustration of a clear plastic water bottle filled with still 
 Want | @ALTTEXT: Illustration of a plastic soda bottle containing a dark brown carbonated liquid, featuring a red cap and a red label.
 @GRAPHIC_NOTE: https://content.nagwa.com/pictograms/info/783146169859</pre>
                 </li>
-                <li><strong>Single Question مع ID مخصص:</strong> عند توفير <code>id</code> لسؤال واحد، يُسجَّل هذا الـ ID ويُستخدم في JSON النهائي ولترقيم ملفات الوسائط المرتبطة:
+                <li><strong>Single Question with Custom ID:</strong> When you provide an <code>id</code> for a single question, that ID is registered and used in the final JSON and for numbering associated media files:
                     <pre class="code-block">type: mcq
 id: 887766554433
 @STEM
@@ -512,7 +514,7 @@ What is the capital of France?
 - Lyon
 - Nice</pre>
                 </li>
-                <li><strong>@ar (English + Arabic):</strong> للسؤال ثنائي اللغة — انجليزي ثم <code>@ar</code> ثم عربي، يُولَّد سؤالان مرتبطان (en و ar):
+                <li><strong>@ar (English + Arabic):</strong> For bilingual questions — English then <code>@ar</code> then Arabic; generates two linked questions (en and ar):
                     <pre class="code-block">type: mcq
 id: 112233445566
 @STEM
@@ -527,7 +529,7 @@ What is 5 + 5?
 * 10
 - 15</pre>
                 </li>
-                <li><strong>Multi-Part (أسئلة متعددة الأجزاء):</strong> استخدم <code>parent_id</code> و <code>@STATEMENT</code> و <code>@PART</code> لكل جزء فرعي:
+                <li><strong>Multi-Part:</strong> Use <code>parent_id</code>, <code>@STATEMENT</code>, and <code>@PART</code> for each sub-question:
                     <pre class="code-block">parent_id: 358146352767
 @STATEMENT
 أوجد ناتج: ١٥ − ٧.
@@ -547,286 +549,299 @@ type: mcq
 *٨
 -٧
 -٩</pre>
-                    <p class="format-hint"><strong>قواعد أساسية:</strong> ضع <code>parent_id</code> والميتا داتا العامة قبل أي وسوم <code>@</code>. كل جزء فرعي يبدأ بـ <code>@PART</code>. استخدم <code>@BLANK</code> للفراغات.</p>
+                    <p class="format-hint"><strong>Key rules:</strong> Put <code>parent_id</code> and global metadata before any <code>@</code> tags. Each sub-question starts with <code>@PART</code>. Use <code>@BLANK</code> for gaps.</p>
                 </li>
-                <li><strong>Puzzle:</strong> راجع question_structures.md للصيغ الكاملة</li>
+                <li><strong>Puzzle:</strong> See question_structures.md for full formats</li>
             </ul>
 
-            <h3>ملاحظات إضافية</h3>
+            <h3>Additional Notes</h3>
             <ul>
-                <li><strong>الميتا داتا:</strong> يمكن إضافة <code>id: 1001</code> أو <code>language: ar</code> في بداية السؤال (معظمها يُتجاهل إلا type)</li>
-                <li><strong>المعادلات الرياضية:</strong> استخدم <code>$x^2$</code> أو <code>`x^2`</code> للصيغ</li>
-                <li><strong>الصور:</strong> يمكن وضع رابط الصورة داخل @STEM أو @CHOICES</li>
-                <li><strong>الأخطاء الشائعة:</strong> نسيان <code>*</code> للإجابة الصحيحة، أو كتابة <code>@stem</code> بحروف صغيرة (يجب <code>@STEM</code>)</li>
+                <li><strong>Metadata:</strong> You can add <code>id: 1001</code> or <code>language: ar</code> at the start of a question (most are ignored except type)</li>
+                <li><strong>Math equations:</strong> Use <code>$x^2$</code> or <code>`x^2`</code> for formulas</li>
+                <li><strong>Images:</strong> Image URLs can be placed inside @STEM or @CHOICES</li>
+                <li><strong>Common mistakes:</strong> Forgetting <code>*</code> for the correct answer, or writing <code>@stem</code> in lowercase (must be <code>@STEM</code>)</li>
             </ul>
         </section>
 
         <!-- Section 5: Editor -->
         <section id="editor" class="card section-card">
             <div class="card-number">5</div>
-            <h2>المحرر النصي الغني والأدوات</h2>
+            <h2>Rich Text Editor and Tools</h2>
             
-            <h3>تنسيق الفقرة والخط</h3>
-            <p><strong>Heading Style:</strong> Normal، Heading 1، Heading 3. <strong>Font Family:</strong> Inherit أو Courier New.</p>
+            <h3>Paragraph and Font Formatting</h3>
+            <p><strong>Heading Style:</strong> Normal, Heading 1, Heading 3. <strong>Font Family:</strong> Inherit or Courier New.</p>
 
-            <h3>شريط الأدوات</h3>
+            <h3>Toolbar</h3>
             <div class="table-wrap">
                 <table class="content-table">
                     <thead>
-                        <tr><th><i data-lucide="wrench" class="inline-icon"></i> الأداة</th><th><i data-lucide="zap" class="inline-icon"></i> الوظيفة</th></tr>
+                        <tr><th><i data-lucide="wrench" class="inline-icon"></i> Tool</th><th><i data-lucide="zap" class="inline-icon"></i> Function</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td><i data-lucide="undo-2" class="inline-icon"></i> / <i data-lucide="redo-2" class="inline-icon"></i></td><td>تراجع / إعادة (Ctrl+Z / Ctrl+Y)</td></tr>
-                        <tr><td>B, I, U, S</td><td>غامق (Ctrl+B)، مائل (Ctrl+I)، تسطير (Ctrl+U)، شطب</td></tr>
-                        <tr><td>List Style</td><td>Normal، Bulleted List، Numbered List</td></tr>
-                        <tr><td>زر A</td><td>لون النص ولون خلفية النص (Highlight). زر Reset/None لإزالة التنسيق</td></tr>
-                        <tr><td>X₂ / X²</td><td>أس سفلي (Subscript) / أس علوي (Superscript)</td></tr>
-                        <tr><td>-Σ- / Σ</td><td>إدراج معادلة داخل السطر (Inline Math) / ككتلة (Block Math)</td></tr>
-                        <tr><td><i data-lucide="table" class="inline-icon"></i></td><td>إدراج جدول — حدد الصفوف والأعمدة، (اختياري) Header Row، Insert. بعد الإدراج: زر أيمن لإضافة صفوف/أعمدة، محاذاة، تلوين خلفية، حذف</td></tr>
-                        <tr><td><i data-lucide="image" class="inline-icon"></i> / <i data-lucide="music" class="inline-icon"></i> / <i data-lucide="file-text" class="inline-icon"></i> / <i data-lucide="minus" class="inline-icon"></i></td><td>صورة (رابط أو رفع ملف)، صوت، قصيدة (@POEM و @END_POEM)، فراغ (Gap/Blank)</td></tr>
-                        <tr><td><i data-lucide="list-indent-increase" class="inline-icon"></i> / <i data-lucide="list-indent-decrease" class="inline-icon"></i></td><td>تقليل / زيادة المسافة البادئة</td></tr>
-                        <tr><td>LTR / RTL</td><td>اتجاه النص: من اليسار لليمين / من اليمين لليسار</td></tr>
-                        <tr><td><i data-lucide="align-left" class="inline-icon"></i> <i data-lucide="align-center" class="inline-icon"></i> <i data-lucide="align-right" class="inline-icon"></i> <i data-lucide="align-justify" class="inline-icon"></i></td><td>محاذاة: لليسار، توسيط، لليمين، عادلة (Justify)</td></tr>
+                        <tr><td><i data-lucide="undo-2" class="inline-icon"></i> / <i data-lucide="redo-2" class="inline-icon"></i></td><td>Undo / Redo (Ctrl+Z / Ctrl+Y)</td></tr>
+                        <tr><td>B, I, U, S</td><td>Bold (Ctrl+B), Italic (Ctrl+I), Underline (Ctrl+U), Strikethrough</td></tr>
+                        <tr><td>List Style</td><td>Normal, Bulleted List, Numbered List</td></tr>
+                        <tr><td>A button</td><td>Text color and highlight. Reset/None to remove formatting</td></tr>
+                        <tr><td>X₂ / X²</td><td>Subscript / Superscript</td></tr>
+                        <tr><td>-Σ- / Σ</td><td>Insert inline equation (Inline Math) / Block equation (Block Math)</td></tr>
+                        <tr><td><i data-lucide="table" class="inline-icon"></i></td><td>Insert table — specify rows and columns, (optional) Header Row, Insert. After insert: right-click to add rows/columns, alignment, background color, delete</td></tr>
+                        <tr><td><i data-lucide="image" class="inline-icon"></i> / <i data-lucide="music" class="inline-icon"></i> / <i data-lucide="file-text" class="inline-icon"></i> / <i data-lucide="minus" class="inline-icon"></i></td><td>Image (URL or upload), audio, poem (@POEM and @END_POEM), gap (Gap/Blank)</td></tr>
+                        <tr><td><i data-lucide="list-indent-increase" class="inline-icon"></i> / <i data-lucide="list-indent-decrease" class="inline-icon"></i></td><td>Decrease / Increase indent</td></tr>
+                        <tr><td>LTR / RTL</td><td>Text direction: Left-to-right / Right-to-left</td></tr>
+                        <tr><td><i data-lucide="align-left" class="inline-icon"></i> <i data-lucide="align-center" class="inline-icon"></i> <i data-lucide="align-right" class="inline-icon"></i> <i data-lucide="align-justify" class="inline-icon"></i></td><td>Alignment: Left, Center, Right, Justify</td></tr>
                     </tbody>
                 </table>
             </div>
 
-            <h3>الصور الافتراضية</h3>
-            <p>لوصف صورة دون ملف فعلي: <code>@ALTTEXT وصف الصورة @GRAPHIC_NOTE ملاحظة اختيارية</code></p>
+            <h3>Placeholder Images</h3>
+            <p>To describe an image without an actual file: <code>@ALTTEXT image description @GRAPHIC_NOTE optional note</code></p>
 
-            <h3>إدارة الوسوم</h3>
-            <p>زر <strong><i data-lucide="tag" class="inline-icon"></i> Manage Tags</strong> يفتح نافذة بقوالب جاهزة ووسوم (@STEM، @CHOICES، @ANSWER...) للإدراج السريع.</p>
+            <h3>Manage Tags</h3>
+            <p>The <strong><i data-lucide="tag" class="inline-icon"></i> Manage Tags</strong> button opens a window with ready templates and tags (@STEM, @CHOICES, @ANSWER...) for quick insertion.</p>
 
-            <h3>نصائح للاستخدام</h3>
+            <h3>Usage Tips</h3>
             <ul>
-                <li><strong>اللصق:</strong> المحرر يحافظ على التنسيق والوسوم عند اللصق من مصدر خارجي</li>
-                <li><strong>المعادلات:</strong> استخدم MathLive لإدخال معادلات رياضية بشكل صحيح</li>
-                <li><strong>العربي:</strong> اختر RTL لضمان اتجاه النص الصحيح</li>
-                <li><strong>الصور المضمّنة:</strong> الصور المُرفوعة تُخزّن وتُعاد تسميتها عند التصدير (مثل {questionId}.01.png)</li>
+                <li><strong>Paste:</strong> Editor preserves formatting and tags when pasting from external sources</li>
+                <li><strong>Equations:</strong> Use MathLive for correct math input</li>
+                <li><strong>Arabic:</strong> Choose RTL to ensure correct text direction</li>
+                <li><strong>Embedded images:</strong> Uploaded images are stored and renamed on export (e.g., {questionId}.01.png)</li>
             </ul>
 
-            <h3>هل أحتاج التنسيق الغني؟</h3>
-            <p><strong>للمعاينة والتصدير:</strong> نعم، التنسيق يُضمّن في JSON النهائي. <strong>للوسوم البسيطة:</strong> يمكنك الاكتفاء بنص عادي مع @STEM و @CHOICES.</p>
+            <h3>Do I Need Rich Formatting?</h3>
+            <p><strong>For preview and export:</strong> Yes, formatting is included in the final JSON. <strong>For simple tags:</strong> Plain text with @STEM and @CHOICES is enough.</p>
         </section>
 
         <!-- Section 6: Preview -->
         <section id="preview" class="card section-card">
             <div class="card-number">6</div>
-            <h2>المعاينة والتحقق</h2>
+            <h2>Preview and Verification</h2>
             
-            <h3>خطوة التحليل</h3>
+            <h3>Analysis Step</h3>
             <ol>
-                <li>أدخل أو الصق الأسئلة في المحرر</li>
-                <li>اضغط زر <strong><i data-lucide="eye" class="inline-icon"></i> Preview Questions</strong></li>
-                <li>تُحلّل الأسئلة وتظهر في اللوحة اليمنى</li>
+                <li>Enter or paste questions in the editor</li>
+                <li>Press the <strong><i data-lucide="eye" class="inline-icon"></i> Preview Questions</strong> button</li>
+                <li>Questions are analyzed and appear in the right panel</li>
             </ol>
 
-            <h3>ما الذي يحدث؟</h3>
+            <h3>What Happens?</h3>
             <ul>
-                <li>يفصل المحلل الأسئلة وفقاً لـ <code>---</code></li>
-                <li>يتعرّف على الوسوم (@STEM، @CHOICES...) ونوع كل سؤال</li>
-                <li>يعرض كل سؤال مع: نوع السؤال، نص السؤال والاختيارات أو الإجابة، قائمة منسدلة لتغيير النوع</li>
+                <li>The parser splits questions by <code>---</code></li>
+                <li>Recognizes tags (@STEM, @CHOICES...) and each question type</li>
+                <li>Displays each question with: question type, question text and choices/answer, dropdown to change type</li>
             </ul>
 
-            <h3>العناصر المعروضة في لوحة المعاينة</h3>
+            <h3>Preview Panel Elements</h3>
             <ul>
-                <li>رقم أو ترتيب السؤال</li>
-                <li>نوع السؤال (قائمة منسدلة قابلة للتعديل)</li>
-                <li>محتوى السؤال كما سيظهر في JSON</li>
-                <li>أي تحذيرات أو أخطاء مرتبطة بالسؤال</li>
+                <li>Question number or order</li>
+                <li>Question type (editable dropdown)</li>
+                <li>Question content as it will appear in JSON</li>
+                <li>Any warnings or errors related to the question</li>
             </ul>
 
             <h3>Subject Template ID</h3>
-            <p>لأسئلة FRQ AI ومواد English: تظهر نافذة <strong>اختر المادة لتطبيق Template ID</strong>. تُفتح من واجهة التطبيق (زر تخصيص أو من لوحة المعاينة) بعد تحليل الأسئلة. اختر المادة والصف ثم اضغط <strong>تطبيق</strong>. عند اختيار English والصف، تظهر قائمة Template ID فوق كل سؤال frq_ai. يمكن تغيير Template ID لكل سؤال بشكل فردي.</p>
+            <p>For FRQ AI questions and English subjects: A <strong>Select subject to apply Template ID</strong> window appears. It opens from the app interface (customize button or preview panel) after analyzing questions. Select the subject and grade then press <strong>Apply</strong>. When English and grade are selected, a Template ID list appears above each frq_ai question. You can change the Template ID for each question individually.</p>
 
-            <h3>سؤال Ordering واتجاه العرض</h3>
-            <p>لأسئلة <strong>Ordering</strong> تظهر قائمة منسدلة لاختيار اتجاه العرض (عمودي أو أفقي).</p>
+            <h3>Ordering Question Display Direction</h3>
+            <p>For <strong>Ordering</strong> questions, a dropdown appears to choose display direction (vertical or horizontal).</p>
 
             <h3>Live Preview</h3>
-            <p>يظهر زر <strong>Live Preview</strong> بعد التحليل ويعرض الأسئلة بمحرك Nagwa.</p>
+            <p>The <strong>Live Preview</strong> button appears after analysis and displays questions with the Nagwa engine.</p>
 
-            <h3>تعديل وحذف</h3>
-            <p>أزرار <i data-lucide="pencil" class="inline-icon"></i> و <i data-lucide="trash-2" class="inline-icon"></i> بجانب كل سؤال في المعاينة للتعديل أو الحذف.</p>
+            <h3>Edit and Delete</h3>
+            <p><i data-lucide="pencil" class="inline-icon"></i> and <i data-lucide="trash-2" class="inline-icon"></i> buttons next to each question in the preview for editing or deleting.</p>
 
-            <h3>التحقق من صحة الأسئلة</h3>
-            <p>قبل التصدير تأكد من: Section ID مضبوط وجرى Fetch، جميع الأسئلة لها النوع المناسب، عدم وجود رسائل خطأ، واختيار Template ID لأسئلة FRQ AI إن لزم.</p>
+            <h3>Question Validation</h3>
+            <p>Before export ensure: Section ID is set and Fetch succeeded, all questions have the correct type, no error messages, and Template ID is selected for FRQ AI questions if needed.</p>
 
-            <h3>ملاحظات</h3>
+            <h3>Notes</h3>
             <ul>
-                <li>أي تعديل في النص يتطلب إعادة الضغط على <strong>Preview Questions</strong></li>
-                <li>قد تظهر تحذيرات (صورة مفقودة، إجابة غير مكتملة) — راجعها قبل التصدير</li>
-                <li>إنشاء JSON أو ZIP يعتمد على آخر نتيجة تحليل ناجحة</li>
-                <li>تظهر إحصائية بعدد الأسئلة المُحلّلة</li>
+                <li>Any text change requires pressing <strong>Preview Questions</strong> again</li>
+                <li>Warnings may appear (missing image, incomplete answer) — review before export</li>
+                <li>Creating JSON or ZIP depends on the last successful analysis</li>
+                <li>A count of analyzed questions is shown</li>
             </ul>
         </section>
 
         <!-- Section 7: Media -->
         <section id="media" class="card section-card">
             <div class="card-number">7</div>
-            <h2>الوسائط والملفات (صور وصوت)</h2>
+            <h2>Media and Files (Images and Audio)</h2>
             
-            <p>يمكنك إضافة صور إلى أي جزء من السؤال (@STEM، @CHOICES، @MATCHING_PAIRS).</p>
+            <p>You can add images to any part of a question (@STEM, @CHOICES, @MATCHING_PAIRS).</p>
 
-            <h3>طرق إدراج الصورة</h3>
-            <p><strong>أ. باستخدام شريط الأدوات (الأسهل):</strong></p>
+            <h3>How to Insert Images</h3>
+            <p><strong>a. Using the toolbar (easiest):</strong></p>
             <ol>
-                <li>ضع المؤشر في المكان الذي تريد إدراج الصورة فيه</li>
-                <li>اضغط على أيقونة <i data-lucide="image" class="inline-icon"></i> في شريط الأدوات</li>
-                <li>ستظهر نافذة: رفع ملف أو الصق رابط URL</li>
-                <li>اضغط Insert. يُنشئ المحرر كود الصورة تلقائياً</li>
+                <li>Place the cursor where you want to insert the image</li>
+                <li>Click the <i data-lucide="image" class="inline-icon"></i> icon in the toolbar</li>
+                <li>A window appears: upload file or paste URL</li>
+                <li>Press Insert. The editor automatically creates the image code</li>
             </ol>
-            <p><strong>ب. كتابة يدوية:</strong> <code>&lt;img src="رابط" alt="وصف" width="300"&gt;</code> أو مع <code>num="1"</code> لربط الصور بملفات التصدير. النظام يُغيّر الاسم عند التصدير (مثل questionId.01.png).</p>
+            <p><strong>b. Manual entry:</strong> <code>&lt;img src="url" alt="description" width="300"&gt;</code> or with <code>num="1"</code> to link images to export files. The system renames on export (e.g., questionId.01.png).</p>
 
-            <h3>الصور الافتراضية (Virtual Images)</h3>
-            <p>لمكان لصورة سيرسمها فريق التصميم لاحقاً، أو وصف لصورة غير موجودة، استخدم <code>@ALTTEXT</code>. في التصدير يُتعامل معه كصورة مرفقة ولكن لن يُنشأ ملف صورة فعلي.</p>
+            <h3>Placeholder Images (Virtual Images)</h3>
+            <p>For a placeholder image the design team will create later, or to describe a non-existent image, use <code>@ALTTEXT</code>. On export it is treated as an attached image but no actual image file is created.</p>
 
-            <h3>الصوتيات</h3>
-            <p>تُستخدم في أسئلة الاستماع. استخدم وسم <code>&lt;audio&gt;</code> مع <code>num</code> و <code>transcript</code>:</p>
-            <pre class="code-block">&lt;audio num="1" transcript="النص المفرغ"&gt;
-المتصفح لا يدعم تشغيل الصوت.
+            <h3>Audio</h3>
+            <p>Used in listening questions. Use the <code>&lt;audio&gt;</code> tag with <code>num</code> and <code>transcript</code>:</p>
+            <pre class="code-block">&lt;audio num="1" transcript="Transcript text"&gt;
+Your browser does not support audio playback.
 &lt;/audio&gt;</pre>
-            <p><strong>num="1":</strong> اسم الملف عند التصدير سيكون questionId.01.mp3. <strong>transcript:</strong> للنص المفرغ (Accessibility أو التصحيح).</p>
+            <p><strong>num="1":</strong> Export filename will be questionId.01.mp3. <strong>transcript:</strong> For transcript text (accessibility or grading).</p>
 
-            <h3>أمثلة كاملة</h3>
-            <p><strong>سؤال خيارات مع صورة:</strong> ضع <code>&lt;img src="..."&gt;</code> داخل @STEM.</p>
-            <p><strong>سؤال استماع:</strong> ضع <code>&lt;audio num="1" transcript="..."&gt;</code> في @STEM.</p>
-            <p><strong>صور في الاختيارات:</strong> استخدم <code>&lt;img src="..."&gt;</code> داخل كل اختيار في @CHOICES.</p>
+            <h3>Complete Examples</h3>
+            <p><strong>MCQ with image:</strong> Place <code>&lt;img src="..."&gt;</code> inside @STEM.</p>
+            <p><strong>Listening question:</strong> Place <code>&lt;audio num="1" transcript="..."&gt;</code> in @STEM.</p>
+            <p><strong>Images in choices:</strong> Use <code>&lt;img src="..."&gt;</code> inside each choice in @CHOICES.</p>
 
-            <h3>ملاحظات التصدير</h3>
+            <h3>Export Notes</h3>
             <ul>
-                <li><strong>تسمية الملفات:</strong> عند Export Package (ZIP) تُعاد تسمية الصور والصوتيات (مثل temp_123_01.png)</li>
-                <li><strong>الصور المرفوعة:</strong> تُحفظ مؤقتاً في المتصفح. تصدير الحزمة (ZIP) يحفظها نهائياً</li>
-                <li><strong>الروابط الخارجية:</strong> الصور ذات الروابط (HTTP) تبقى روابط، ولن تُحمّل داخل ZIP إلا إن كانت مرفوعة محلياً (Base64/Blob)</li>
+                <li><strong>File naming:</strong> On Export Package (ZIP), images and audio are renamed (e.g., temp_123_01.png)</li>
+                <li><strong>Uploaded images:</strong> Stored temporarily in the browser. Exporting the package (ZIP) saves them permanently</li>
+                <li><strong>External links:</strong> Images with HTTP URLs remain as links; they won't be included in the ZIP unless uploaded locally (Base64/Blob)</li>
             </ul>
         </section>
 
         <!-- Section 8: Export -->
         <section id="export" class="card section-card">
             <div class="card-number">8</div>
-            <h2>التصدير والتصدير النهائي</h2>
+            <h2>Export and Final Output</h2>
             
-            <h3>الشروط المسبقة</h3>
+            <h3>Prerequisites</h3>
             <ol>
-                <li>Section ID و Fetch</li>
+                <li>Section ID and Fetch</li>
                 <li>Preview Questions</li>
-                <li>مراجعة المعاينة</li>
+                <li>Review the preview</li>
             </ol>
 
             <h3>Create JSON File</h3>
-            <p>1. اضغط زر <strong><i data-lucide="file-code" class="inline-icon"></i> Create JSON File</strong>. 2. تُفتح نافذة JSON Output تعرض المحتوى منسّقاً. 3. <strong><i data-lucide="copy" class="inline-icon"></i> نسخ JSON</strong> ينسخ للحافظة، <strong><i data-lucide="x" class="inline-icon"></i> إغلاق</strong> يغلق النافذة. للحصول على ملف JSON قابل للتحميل مع الوسائط، استخدم <strong>Export Package (ZIP)</strong>.</p>
-            <p><strong>المحتوى المُصدَّر:</strong> مصفوفة من كائنات الأسئلة بتنسيق Nagwa (id، type، stem، choices/answer، metadata). الصور والصوت بأسماء مثل {questionId}.01.png</p>
+            <p>1. Press <strong><i data-lucide="file-code" class="inline-icon"></i> Create JSON File</strong>. 2. A JSON Output window opens showing formatted content. 3. <strong><i data-lucide="copy" class="inline-icon"></i> Copy JSON</strong> copies to clipboard, <strong><i data-lucide="x" class="inline-icon"></i> Close</strong> closes the window. For a downloadable JSON file with media, use <strong>Export Package (ZIP)</strong>.</p>
+            <p><strong>Exported content:</strong> Array of question objects in Nagwa format (id, type, stem, choices/answer, metadata). Images and audio use names like {questionId}.01.png</p>
 
             <h3>Export Package (ZIP)</h3>
-            <p>بعد التحليل يتحوّل الزر من معطّل إلى نشط. اضغط لتحميل ZIP يتضمن: ملف JSON، مجلد صور، مجلد صوتيات. مناسب لرفع مجموعة كاملة إلى Nagwa دفعة واحدة.</p>
+            <p>After analysis the button changes from disabled to active. Press to download a ZIP containing: JSON file, images folder, audio folder. Suitable for uploading a full set to Nagwa at once.</p>
 
-            <h3>نسخ JSON إلى الحافظة</h3>
-            <p>من نافذة JSON Output اضغط <strong><i data-lucide="copy" class="inline-icon"></i> نسخ JSON</strong> — يُنسخ بالكامل ويمكن لصقه في محرر أو ملف آخر.</p>
+            <h3>Copy JSON to Clipboard</h3>
+            <p>From the JSON Output window press <strong><i data-lucide="copy" class="inline-icon"></i> Copy JSON</strong> — copies in full and can be pasted into an editor or other file.</p>
 
-            <h3>محرر CSV</h3>
-            <p>للتحكم في بيانات التصدير. الأعمدة: <strong>Question Id</strong> (معرّف السؤال)، <strong>Lang</strong> (لغة المحتوى)، <strong>Section Id</strong>، <strong>Attributes</strong> (أنواع أجزاء السؤال)، <strong>Subject</strong>، <strong>Source</strong> (مثل nagwa). يُفتح من واجهة التطبيق بعد التحليل. البيانات تُحفظ في التخزين المحلي وتُستخدم عند إنشاء JSON أو ZIP.</p>
+            <h3>CSV Editor</h3>
+            <p>For controlling export data. Columns: <strong>Question Id</strong>, <strong>Lang</strong> (content language), <strong>Section Id</strong>, <strong>Attributes</strong> (question part types), <strong>Subject</strong>, <strong>Source</strong> (e.g., nagwa). Opens from the app interface after analysis. Data is saved to local storage and used when creating JSON or ZIP.</p>
 
-            <h3>تسمية الملفات</h3>
-            <p><strong>الصور:</strong> <code>{questionId}.{num}.{ext}</code> (مثل temp_1234567890_01.png). <strong>الصوت:</strong> <code>{questionId}.{num}.mp3</code></p>
+            <h3>File Naming</h3>
+            <p><strong>Images:</strong> <code>{questionId}.{num}.{ext}</code> (e.g., temp_1234567890_01.png). <strong>Audio:</strong> <code>{questionId}.{num}.mp3</code></p>
 
-            <h3>الصور الافتراضية في التصدير</h3>
-            <p>وسوم مثل @alttext أو @graphic_note تُدرج في JSON كمرجع — لا يُنشأ ملف صورة فعلي في الحزمة.</p>
+            <h3>Placeholder Images in Export</h3>
+            <p>Tags like @alttext or @graphic_note are included in JSON as references — no actual image file is created in the package.</p>
 
-            <h3>ما الفرق بين Create JSON و Export Package؟</h3>
-            <p><strong>Create JSON File:</strong> نافذة بمحتوى JSON للنسخ — مناسب للتعديل اليدوي. لا يتضمّن ملفات وسائط منفصلة. <strong>Export Package (ZIP):</strong> يُنزّل ملف ZIP جاهز للرفع — يتضمّن JSON + صور + صوت + CSV. مناسب للرفع المباشر إلى Nagwa.</p>
+            <h3>What's the Difference Between Create JSON and Export Package?</h3>
+            <p><strong>Create JSON File:</strong> Window with JSON content for copying — good for manual editing. Does not include separate media files. <strong>Export Package (ZIP):</strong> Downloads a ready-to-upload ZIP — includes JSON + images + audio + CSV. Good for direct upload to Nagwa.</p>
 
-            <h3>ترتيب العمل الموصى به</h3>
+            <h3>Recommended Workflow</h3>
             <ol>
-                <li>إعداد Section ID و Fetch</li>
-                <li>إدخال الأسئلة وتنسيقها</li>
-                <li>Preview Questions ومراجعة المعاينة</li>
-                <li>تعديل أنواع الأسئلة و Template ID إن لزم</li>
-                <li>Create JSON أو Export Package</li>
+                <li>Set up Section ID and Fetch</li>
+                <li>Enter and format questions</li>
+                <li>Preview Questions and review</li>
+                <li>Adjust question types and Template ID if needed</li>
+                <li>Create JSON or Export Package</li>
             </ol>
         </section>
 
         <!-- Section 9: Troubleshooting -->
         <section id="troubleshooting" class="card section-card">
             <div class="card-number">9</div>
-            <h2>نصائح وحل المشاكل</h2>
+            <h2>Tips and Troubleshooting</h2>
             
-            <h3>تحقق سريع</h3>
+            <h3>Quick Check</h3>
             <ol>
-                <li>هل قمت بـ Preview Questions قبل التصدير؟</li>
-                <li>هل Section ID مُدخل وتم Fetch بنجاح؟</li>
-                <li>هل الوسوم بحروف كبيرة (<code>@STEM</code> وليس <code>@stem</code>)؟</li>
-                <li>هل الإجابة الصحيحة مُسبوقة بـ <code>*</code>؟</li>
+                <li>Did you run Preview Questions before export?</li>
+                <li>Is Section ID entered and Fetch successful?</li>
+                <li>Are tags in uppercase (<code>@STEM</code> not <code>@stem</code>)?</li>
+                <li>Is the correct answer prefixed with <code>*</code>?</li>
             </ol>
 
-            <h3>أخطاء شائعة وحلولها</h3>
+            <h3>Common Errors and Solutions</h3>
             <div class="troubleshoot-list">
                 <div class="trouble-item">
                     <i data-lucide="alert-circle" class="trouble-icon"></i>
-                    <div><strong>"الرجاء تحليل الأسئلة أولاً"</strong> — اضغط Preview Questions أولاً.</div>
+                    <div><strong>"Please analyze questions first"</strong> — Press Preview Questions first.</div>
                 </div>
                 <div class="trouble-item">
                     <i data-lucide="alert-circle" class="trouble-icon"></i>
-                    <div><strong>Export Package معطّل</strong> — يحتاج تحليل ناجح أولاً.</div>
+                    <div><strong>Export Package disabled</strong> — Requires a successful analysis first.</div>
                 </div>
                 <div class="trouble-item">
                     <i data-lucide="alert-circle" class="trouble-icon"></i>
-                    <div><strong>Section Fetch يفشل</strong> — تحقق من الإنترنت وصحة Section ID.</div>
+                    <div><strong>Section Fetch fails</strong> — Check internet connection and Section ID validity.</div>
                 </div>
                 <div class="trouble-item">
                     <i data-lucide="alert-circle" class="trouble-icon"></i>
-                    <div><strong>نوع السؤال خاطئ</strong> — غيّره من القائمة المنسدلة في المعاينة.</div>
+                    <div><strong>Wrong question type</strong> — Change it from the dropdown in the preview.</div>
                 </div>
                 <div class="trouble-item">
                     <i data-lucide="alert-circle" class="trouble-icon"></i>
-                    <div><strong>@POEM و @END_POEM غير متطابقين</strong> — أغلق كل @POEM بـ @END_POEM.</div>
+                    <div><strong>@POEM and @END_POEM mismatch</strong> — Close every @POEM with @END_POEM.</div>
                 </div>
                 <div class="trouble-item">
                     <i data-lucide="alert-circle" class="trouble-icon"></i>
-                    <div><strong>الوسوم لا تُعرَف</strong> — استخدم حروف كبيرة: @STEM، @CHOICES، @ANSWER.</div>
+                    <div><strong>Tags not recognized</strong> — Use uppercase: @STEM, @CHOICES, @ANSWER.</div>
                 </div>
                 <div class="trouble-item">
                     <i data-lucide="alert-circle" class="trouble-icon"></i>
-                    <div><strong>الإجابة الصحيحة لا تُحدّد</strong> — استخدم <code>*</code> للصحيحة و<code>-</code> للخاطئة.</div>
+                    <div><strong>Correct answer not specified</strong> — Use <code>*</code> for correct and <code>-</code> for incorrect.</div>
                 </div>
                 <div class="trouble-item">
                     <i data-lucide="alert-circle" class="trouble-icon"></i>
-                    <div><strong>API Keys</strong> — تأكد من المفتاح والرصيد (Gemini أو OpenAI).</div>
+                    <div><strong>API Keys</strong> — Verify key and quota (Gemini or OpenAI).</div>
                 </div>
                 <div class="trouble-item">
                     <i data-lucide="alert-circle" class="trouble-icon"></i>
-                    <div><strong>Create AI يطلب Section ID</strong> — أدخل Section ID واضغط Fetch أولاً.</div>
+                    <div><strong>Create AI requires Section ID</strong> — Enter Section ID and press Fetch first.</div>
                 </div>
                 <div class="trouble-item">
                     <i data-lucide="alert-circle" class="trouble-icon"></i>
-                    <div><strong>الصور لا تظهر</strong> — استخدم روابط مستقرة أو ارفع عبر زر الإدراج.</div>
+                    <div><strong>Images don't display</strong> — Use stable URLs or upload via the insert button.</div>
                 </div>
                 <div class="trouble-item">
                     <i data-lucide="alert-circle" class="trouble-icon"></i>
-                    <div><strong>المعادلات الرياضية لا تظهر بشكل صحيح</strong> — استخدم زر الإدراج -Σ- أو Σ بدلاً من LaTeX يدوياً، وتأكد من إغلاق المعادلة في نافذة MathLive.</div>
+                    <div><strong>Math equations don't display correctly</strong> — Use the -Σ- or Σ insert button instead of manual LaTeX, and ensure the equation is closed in the MathLive window.</div>
                 </div>
             </div>
 
-            <h3>تفاصيل بعض الحلول</h3>
-            <p><strong>Section Fetch يفشل:</strong> تحقق من الإنترنت، صحة Section ID (رقم فقط)، تشغيل السيرفر المحلي (python server.py أو npm run dev).</p>
-            <p><strong>الوسوم لا تُعرَف:</strong> استخدم حروف كبيرة @STEM و @CHOICES و @ANSWER، وتأكد من عدم وجود مسافات قبل أو بعد الوسم.</p>
-            <p><strong>الإجابة الصحيحة:</strong> <code>* القاهرة</code> ← صحيحة. <code>- الإسكندرية</code> ← خاطئة.</p>
+            <h3>Solution Details</h3>
+            <p><strong>Section Fetch fails:</strong> Check internet, Section ID validity (numbers only), local server running (python server.py or npm run dev).</p>
+            <p><strong>Tags not recognized:</strong> Use uppercase @STEM, @CHOICES, @ANSWER, and ensure no spaces before or after the tag.</p>
+            <p><strong>Correct answer:</strong> <code>* Paris</code> ← correct. <code>- Lyon</code> ← incorrect.</p>
 
-            <h3>نصائح عامة</h3>
+            <h3>General Tips</h3>
             <ul>
-                <li>احفظ نسخة من النص قبل المسح</li>
-                <li>اختبر سؤال MCQ بسيط أولاً</li>
-                <li>استخدم Live Preview قبل التصدير</li>
-                <li>قسّم الأسئلة الطويلة إلى دفعات</li>
-                <li>استخدم متصفح حديث (Chrome، Firefox، Edge)</li>
-                <li>المحتوى يُحفظ تلقائياً في المتصفح</li>
+                <li>Save a copy of the text before clearing</li>
+                <li>Test with a simple MCQ first</li>
+                <li>Use Live Preview before export</li>
+                <li>Split long question sets into batches</li>
+                <li>Use a modern browser (Chrome, Firefox, Edge)</li>
+                <li>Content is auto-saved in the browser</li>
             </ul>
+        </section>
+
+        <!-- Section 10: Links -->
+        <section id="links" class="card section-card">
+            <div class="card-number">10</div>
+            <h2>Links</h2>
+            <p>Quick access to related platforms:</p>
+            <div class="links-grid">
+                <a href="https://qms.nagwa.com/" target="_blank" rel="noopener noreferrer" class="link-item" title="Nagwa QMS">
+                    <img src="assts/qms.svg" alt="Nagwa QMS">
+                    <span class="link-item__text">Nagwa QMS</span>
+                </a>
+            </div>
         </section>
 
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>دليل المستخدم — محول الأسئلة إلى JSON</p>
-        <p class="footer-refs">للمرجع الكامل لأنواع الأسئلة راجع question_structures.md. لسلوك الصور والصوت راجع system_behavior_guide.md.</p>
+        <p>User Guide — Question to JSON Converter</p>
+        <p class="footer-refs">For full question type reference see question_structures.md. For image and audio behavior see system_behavior_guide.md.</p>
     </footer>
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
