@@ -239,7 +239,8 @@
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: mcq
-@STEM &lt;question&gt;
+@STEM
+&lt;question&gt;
 @CHOICES
 * &lt;correct answer&gt;
 - &lt;distractor 1&gt;
@@ -247,7 +248,8 @@
 - &lt;distractor 3&gt;</pre>
                         <h4>Example</h4>
                         <pre>type: mcq
-@STEM Which planet is known as the "Red Planet"?
+@STEM
+Which planet is known as the "Red Planet"?
 @CHOICES
 * Mars
 - Venus
@@ -264,7 +266,8 @@
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: mrq
-@STEM &lt;question&gt;
+@STEM
+&lt;question&gt;
 @CHOICES
 * &lt;correct answer 1&gt;
 * &lt;correct answer 2&gt;
@@ -272,7 +275,8 @@
 - &lt;distractor 2&gt;</pre>
                         <h4>Example</h4>
                         <pre>type: mrq
-@STEM Which of the following are primary colors?
+@STEM
+Which of the following are primary colors?
 @CHOICES
 * Red
 * Blue
@@ -290,14 +294,16 @@
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: string
-@STEM &lt;short answer question&gt;
+@STEM
+&lt;short answer question&gt;
 @ANSWER &lt;model answer&gt;
 @GUIDELINES
 &lt;exact model answer&gt; - 1 - Correct answer
 &lt;completely incorrect answer&gt; - 0 - Incorrect answer.</pre>
                         <h4>Example</h4>
                         <pre>type: string
-@STEM Briefly explain why the sky appears blue during the day.
+@STEM
+Briefly explain why the sky appears blue during the day.
 @ANSWER Rayleigh scattering causes shorter wavelengths of light (blue) to scatter more than longer wavelengths.
 @GUIDELINES
 The sky is blue because of Rayleigh scattering. - 1 - Correct answer.
@@ -313,14 +319,16 @@ Light reflects off the ocean. - 0 - Incorrect scientific explanation.</pre>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: matching
-@STEM &lt;question&gt;
+@STEM
+&lt;question&gt;
 @MATCHING_PAIRS
 &lt;item A1&gt; | &lt;item B1&gt;
 &lt;item A2&gt; | &lt;item B2&gt;
 &lt;item A3&gt; | &lt;item B3&gt;</pre>
                         <h4>Example</h4>
                         <pre>type: matching
-@STEM Match the capital city to its country.
+@STEM
+Match the capital city to its country.
 @MATCHING_PAIRS
 Paris | France
 Tokyo | Japan
@@ -336,7 +344,8 @@ Cairo | Egypt</pre>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: ordering
-@STEM &lt;question&gt;
+@STEM
+&lt;question&gt;
 @CHOICES
 - &lt;item 1 (first)&gt;
 - &lt;item 2&gt;
@@ -344,7 +353,8 @@ Cairo | Egypt</pre>
 - &lt;item 4 (last)&gt;</pre>
                         <h4>Example</h4>
                         <pre>type: ordering
-@STEM Arrange these historical events in chronological order (earliest first).
+@STEM
+Arrange these historical events in chronological order (earliest first).
 @CHOICES
 - Invention of the Printing Press
 - First Moon Landing
@@ -361,13 +371,15 @@ Cairo | Egypt</pre>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: gap
-@STEM &lt;sentence with @BLANK&gt;
+@STEM
+&lt;sentence with @BLANK&gt;
 @GAPS
 * &lt;correct answer&gt;
 - &lt;distractor&gt;</pre>
                         <h4>Example</h4>
                         <pre>type: gap
-@STEM Photosynthesis is the process by which @BLANK use sunlight to synthesize nutrients from @BLANK and water.
+@STEM
+Photosynthesis is the process by which @BLANK use sunlight to synthesize nutrients from @BLANK and water.
 @GAPS
 * plants
 * carbon dioxide
@@ -384,11 +396,13 @@ Cairo | Egypt</pre>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: frq
-@STEM &lt;question&gt;
+@STEM
+&lt;question&gt;
 @ANSWER &lt;model answer&gt;</pre>
                         <h4>Example</h4>
                         <pre>type: frq
-@STEM If a rectangle has a length of 5cm and a width of 4cm, what is its area in square centimeters?
+@STEM
+If a rectangle has a length of 5cm and a width of 4cm, what is its area in square centimeters?
 @ANSWER 20</pre>
                     </div>
                 </div>
@@ -401,12 +415,14 @@ Cairo | Egypt</pre>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: input
-@STEM &lt;question&gt;
+@STEM
+&lt;question&gt;
 @ANSWER
 &lt;value&gt;</pre>
                         <h4>Example</h4>
                         <pre>type: input
-@STEM Solve for x: 2x + 5 = 15
+@STEM
+Solve for x: 2x + 5 = 15
 @ANSWER
 5</pre>
                     </div>
@@ -420,12 +436,14 @@ Cairo | Egypt</pre>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: counting
-@STEM &lt;question&gt;
+@STEM
+&lt;question&gt;
 @ANSWER
 &lt;value&gt; | &lt;unit&gt;</pre>
                         <h4>Example</h4>
                         <pre>type: counting
-@STEM How many sides does a hexagon have?
+@STEM
+How many sides does a hexagon have?
 @ANSWER
 6 | sides</pre>
                     </div>
@@ -439,7 +457,8 @@ Cairo | Egypt</pre>
                     <div class="format-detail">
                         <h4>Structure</h4>
                         <pre>type: opinion
-@STEM &lt;question&gt;
+@STEM
+&lt;question&gt;
 @CHOICES
 - &lt;option 1&gt;
 - &lt;option 2&gt;
@@ -448,7 +467,8 @@ Cairo | Egypt</pre>
 - &lt;option 5&gt;</pre>
                         <h4>Example</h4>
                         <pre>type: opinion
-@STEM Which of these school subjects do you find most interesting?
+@STEM
+Which of these school subjects do you find most interesting?
 @CHOICES
 - Mathematics
 - Science
@@ -472,7 +492,63 @@ Cairo | Egypt</pre>
                 <li><strong>Counting:</strong> <code>type: counting</code> مع <code>@ANSWER</code> مثل <code>5 | برتقالات</code></li>
                 <li><strong>@POEM و @END_POEM:</strong> للنص الشعري — ضع الأبيات بينهما</li>
                 <li><strong>@ALTTEXT و @GRAPHIC_NOTE:</strong> للصور الافتراضية — يمكن استخدامها في @STEM أو @CHOICES أو @MATCHING_PAIRS</li>
-                <li><strong>@ar:</strong> للسؤال ثنائي اللغة — انجليزي ثم <code>@ar</code> ثم عربي، يُولَّد سؤالان مرتبطان (en و ar)</li>
+                <li><strong>Matching مع صور:</strong> مثال على matching مع @ALTTEXT و @GRAPHIC_NOTE في الأزواج:
+                    <pre class="code-block">type: matching
+@STEM
+Drag to sort the needs and wants.
+@MATCHING_PAIRS
+Need | @ALTTEXT: Illustration of a clear plastic water bottle filled with still water, featuring a blue cap and a ribbed texture on the plastic.
+@GRAPHIC_NOTE: https://content.nagwa.com/pictograms/info/587175432682
+Want | @ALTTEXT: Illustration of a plastic soda bottle containing a dark brown carbonated liquid, featuring a red cap and a red label.
+@GRAPHIC_NOTE: https://content.nagwa.com/pictograms/info/783146169859</pre>
+                </li>
+                <li><strong>Single Question مع ID مخصص:</strong> عند توفير <code>id</code> لسؤال واحد، يُسجَّل هذا الـ ID ويُستخدم في JSON النهائي ولترقيم ملفات الوسائط المرتبطة:
+                    <pre class="code-block">type: mcq
+id: 887766554433
+@STEM
+What is the capital of France?
+@CHOICES
+* Paris
+- Lyon
+- Nice</pre>
+                </li>
+                <li><strong>@ar (English + Arabic):</strong> للسؤال ثنائي اللغة — انجليزي ثم <code>@ar</code> ثم عربي، يُولَّد سؤالان مرتبطان (en و ar):
+                    <pre class="code-block">type: mcq
+id: 112233445566
+@STEM
+What is 5 + 5?
+@CHOICES
+* 10
+- 15
+@ar
+@STEM
+ما حاصل جمع 5 + 5؟
+@CHOICES
+* 10
+- 15</pre>
+                </li>
+                <li><strong>Multi-Part (أسئلة متعددة الأجزاء):</strong> استخدم <code>parent_id</code> و <code>@STATEMENT</code> و <code>@PART</code> لكل جزء فرعي:
+                    <pre class="code-block">parent_id: 358146352767
+@STATEMENT
+أوجد ناتج: ١٥ − ٧.
+@PART
+type: mcq
+@STEM
+قسِّم العدد ٧ إلى@BLANK و@BLANK .
+@CHOICES
+*٥ و ٢
+- ٦و ١
+- ٤ و ٣
+@PART
+type: mcq
+@STEM
+اطرح ٥ ثم ٢. الناتج هو@BLANK .
+@CHOICES
+*٨
+-٧
+-٩</pre>
+                    <p class="format-hint"><strong>قواعد أساسية:</strong> ضع <code>parent_id</code> والميتا داتا العامة قبل أي وسوم <code>@</code>. كل جزء فرعي يبدأ بـ <code>@PART</code>. استخدم <code>@BLANK</code> للفراغات.</p>
+                </li>
                 <li><strong>Puzzle:</strong> راجع question_structures.md للصيغ الكاملة</li>
             </ul>
 
